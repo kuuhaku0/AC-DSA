@@ -12,6 +12,19 @@ func diagonalSum(of matrix: [[Int]]) -> Int {
     return sum
 }
 ```
+```without double adding center of matrix 
+
+func diagonalSums(of matrix: [[Int]]) -> Int {
+    var sum = 0
+
+    for i in 0..<matrix.count {
+        sum += matrix[i][i] + matrix[i][matrix.count - i - 1]
+    }
+    if matrix.count % 2 != 0 {
+        sum -= matrix[matrix.count / 2][matrix.count / 2]
+    }
+    return sum
+}
 
 ## Javascript
 
