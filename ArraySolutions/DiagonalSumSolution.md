@@ -25,6 +25,7 @@ func diagonalSums(of matrix: [[Int]]) -> Int {
     }
     return sum
 }
+```
 
 ## Javascript
 
