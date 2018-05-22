@@ -12,7 +12,8 @@ func diagonalSum(of matrix: [[Int]]) -> Int {
     return sum
 }
 ```
-```without double adding center of matrix 
+Without double adding center of matrix
+```swift 
 
 func diagonalSums(of matrix: [[Int]]) -> Int {
     var sum = 0
